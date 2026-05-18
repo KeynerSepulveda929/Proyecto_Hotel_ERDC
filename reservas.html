@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Hotel El Rincón del Carmen</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reservas</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="form-reserva">
+    <h2>Consulta disponibilidad</h2>
+    <form id="formDisponibilidad">
+      <label>Fecha inicio: <input type="date" id="fechaInicio"></label>
+      <label>Fecha fin: <input type="date" id="fechaFin"></label>
+      <label>Personas: <input type="number" id="personas" min="1"></label>
+      <button type="submit">Consultar</button>
+    </form>
+  </section>
+
+  <section id="resultadoDisponibilidad"></section>
+
+  <footer>
+    <p>© 2026 Hotel El Rincón del Carmen</p>
+  </footer>
+
+  <script src="js/reservas.js"></script>
+</body>
+</html>
