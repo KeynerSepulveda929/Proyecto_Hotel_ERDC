@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - Hotel El Rincón del Carmen</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/registro.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Registro de Usuario</h1>
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+  </header>
+
+  <section class="form-reserva">
+    <h2>Crear cuenta</h2>
+    <form id="formRegistro">
+      <label>Número de identificación: <input type="text" id="id"></label>
+      <label>Nombre completo: <input type="text" id="nombre"></label>
+      <label>Nacionalidad: <input type="text" id="nacionalidad"></label>
+      <label>Email: <input type="email" id="email"></label>
+      <label>Teléfono: <input type="tel" id="telefono"></label>
+      <label>Contraseña: <input type="password" id="password"></label>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Hotel El Rincón del Carmen</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

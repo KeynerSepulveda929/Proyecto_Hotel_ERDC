@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administrador - Hotel El Rincón del Carmen</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/admin.js"></script>
+</head>
+<body>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const adminActivo = localStorage.getItem("adminActivo");
+    if (!adminActivo) {
+      alert("Debes iniciar sesión como administrador para acceder.");
+      window.location.href = "login-admin.html";
+    }
+  });
+</script>
+
+  <header>
+    <h1>Panel de Administración</h1>
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="admin.html">Admin</a>
+        <a href="#" onclick="cerrarSesionAdmin()">Cerrar sesión admin</a>
+    </nav>
+  </header>
+
+  <section class="form-admin">
+    <h2>Gestión de habitaciones</h2>
+    <form id="formHabitacion">
+      <label>Nombre: <input type="text" id="nombre"></label>
+      <label>Camas: <input type="number" id="camas"></label>
+      <label>Capacidad: <input type="number" id="personas"></label>
+      <label>Precio por noche: <input type="number" id="precio"></label>
+      <label>Servicios (coma separados): <input type="text" id="servicios"></label>
+      <button type="submit">Agregar/Actualizar</button>
+    </form>
+  </section>
+
+  <section id="listaHabitaciones"></section>
+
+  <section class="reservas-admin">
+    <h2>Gestión de reservas</h2>
+    <div id="listaReservas"></div>
+  </section>
+
+  <footer>
+    <p>© 2026 Hotel El Rincón del Carmen</p>
+  </footer>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

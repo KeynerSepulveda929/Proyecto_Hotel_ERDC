@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - Hotel El Rincón del Carmen</title>
+  <title>Login - Hotel El Rincón del Carmen</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/main.js"></script>
   <script src="js/registro.js"></script>
-  <script src="js/contacto.js"></script>
 </head>
 <body>
   <header>
-    <h1>Contacto</h1>
+    <h1>Iniciar sesión</h1>
     <nav id="menu">
       <a href="index.html">Inicio</a>
       <a href="reservas.html">Reservas</a>
       <a href="contacto.html">Contacto</a>
+      <a href="login.html">Login</a>
     </nav>
   </header>
 
-  <section class="contacto">
-    <h2>Ubicación</h2>
-    <p>Dirección: Calle Principal #123, Bucaramanga, Colombia</p>
-    <p>Teléfono: <a href="tel:+573001112233">+57 300 111 2233</a></p>
-    <p>Email: hotel@rincondelcarmen.com</p>
-    <iframe src="https://maps.google.com/maps?q=Bucaramanga&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  <section class="form-reserva">
+    <h2>Accede a tu cuenta</h2>
+    <form id="formLogin">
+      <label>Email: <input type="email" id="loginEmail"></label>
+      <label>Contraseña: <input type="password" id="loginPassword"></label>
+      <button type="submit">Ingresar</button>
+    </form>
   </section>
 
   <footer>
     <p>© 2026 Hotel El Rincón del Carmen</p>
   </footer>
+
+  <script src="js/auth.js"></script>
 </body>
 </html>
